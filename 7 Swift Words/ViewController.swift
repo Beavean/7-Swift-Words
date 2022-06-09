@@ -17,7 +17,11 @@ class ViewController: UIViewController {
     var activatedButtons = [UIButton]()
     var solutions = [String]()
     
-    var score = 0
+    var score = 0 {
+        didSet {
+            scoreLabel.text = "Score: \(score)"
+        }
+    }
     var level = 1
     
     override func loadView() {
@@ -117,6 +121,7 @@ class ViewController: UIViewController {
                 
                 let frame = CGRect(x: column * width, y: row * height, width: width, height: height)
                 letterButton.frame = frame
+                letterButton.layer.borderWidth = 1
                 
                 buttonsView.addSubview(letterButton)
                 letterButtons.append(letterButton)
@@ -132,6 +137,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        cluesLabel.layer.borderWidth = 1
+        answersLabel.layer.borderWidth = 1
+        currentAnswer.layer.borderWidth = 1
+        scoreLabel.layer.borderWidth = 1
+        
         
         loadLevel()
     }
@@ -155,6 +166,8 @@ class ViewController: UIViewController {
             answersLabel.text = splitAnswers?.joined(separator: "\n")
             currentAnswer.text = ""
             score += 1
+            
+            
             
             if score % 7 == 0 {
                 let ac = UIAlertController(title: "Well done!", message: "Are you ready for the next level?", preferredStyle: .alert)
