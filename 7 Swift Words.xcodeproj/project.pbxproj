@@ -13,6 +13,8 @@
 		0816BB762850AE7B00148DF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0816BB742850AE7B00148DF4 /* Main.storyboard */; };
 		0816BB782850AE7C00148DF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0816BB772850AE7C00148DF4 /* Assets.xcassets */; };
 		0816BB7B2850AE7C00148DF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0816BB792850AE7C00148DF4 /* LaunchScreen.storyboard */; };
+		08CB085C28521E8F00D8D112 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 08CB085A28521E8E00D8D112 /* level1.txt */; };
+		08CB085D28521E8F00D8D112 /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 08CB085B28521E8F00D8D112 /* level2.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0816BB772850AE7C00148DF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0816BB7A2850AE7C00148DF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0816BB7C2850AE7C00148DF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08CB085A28521E8E00D8D112 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		08CB085B28521E8F00D8D112 /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				0816BB772850AE7C00148DF4 /* Assets.xcassets */,
 				0816BB792850AE7C00148DF4 /* LaunchScreen.storyboard */,
 				0816BB7C2850AE7C00148DF4 /* Info.plist */,
+				08CB085A28521E8E00D8D112 /* level1.txt */,
+				08CB085B28521E8F00D8D112 /* level2.txt */,
 			);
 			path = "7 Swift Words";
 			sourceTree = "<group>";
@@ -125,7 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08CB085D28521E8F00D8D112 /* level2.txt in Resources */,
 				0816BB7B2850AE7C00148DF4 /* LaunchScreen.storyboard in Resources */,
+				08CB085C28521E8F00D8D112 /* level1.txt in Resources */,
 				0816BB782850AE7C00148DF4 /* Assets.xcassets in Resources */,
 				0816BB762850AE7B00148DF4 /* Main.storyboard in Resources */,
 			);
@@ -303,7 +311,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -330,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
