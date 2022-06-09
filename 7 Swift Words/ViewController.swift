@@ -169,11 +169,21 @@ class ViewController: UIViewController {
             
             
             
-            if score % 7 == 0 {
+            if solutions.joined(separator: "\n") == answersLabel.text {
                 let ac = UIAlertController(title: "Well done!", message: "Are you ready for the next level?", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: levelUp))
                 present(ac, animated: true)
             }
+        } else {
+            let ac = UIAlertController(title: "Incorrect guess", message: "Please try another letter combinations", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+            if score == 0 {
+                return
+            } else {
+            score -= 1
+            }
+            
         }
     }
     
